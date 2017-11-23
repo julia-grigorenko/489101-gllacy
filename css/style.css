@@ -1,0 +1,96 @@
+.main-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.visually-hidden {
+    position:absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-nav-submenu {
+  display:none;
+}
+
+.main-nav-item-catalog:hover .main-nav-submenu{
+  display: block;
+  transition: .8s;
+}
+
+.main-nav-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-block-form {
+    display:none;
+}
+
+.search-block:hover .search-block-form{
+  display: block;
+  transition: .8s;
+}
+
+.login-block-form, .login-block-help {
+  display:none;
+}
+
+.login-block:hover .login-block-form{
+  display: block;
+  transition: .8s;
+}
+
+.login-block:hover .login-block-help{
+  display: block;
+  transition: .8s;
+}
+
+.user-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.baners-primary{
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog-popular{
+  display: flex;
+  flex-direction: row;
+}
+
+.features-list{
+  display: flex;
+  flex-direction: row;
+}
+
+.baners-secondary {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-footer{
+  display: flex;
+  flex-direction: row;
+}
+
+.index-feedback-popup {
+  display: none;
+}
+
+.breadcrumbs-list{
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: row;
+}
