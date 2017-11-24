@@ -1,6 +1,5 @@
 .main-header {
   display: flex;
-  flex-direction: row;
 }
 
 .visually-hidden {
@@ -18,79 +17,65 @@
   display:none;
 }
 
-.main-nav-item-catalog:hover .main-nav-submenu{
+.main-nav-item-catalog:first-child:hover .main-nav-submenu {
   display: block;
   transition: .8s;
 }
 
 .main-nav-list {
   display: flex;
-  flex-direction: row;
 }
 
 .search-block-form {
     display:none;
 }
 
-.search-block:hover .search-block-form{
+.search-block:hover .search-block-form {
   display: block;
   transition: .8s;
 }
 
-.login-block-form, .login-block-help {
+.login-popup {
   display:none;
 }
 
-.login-block:hover .login-block-form{
-  display: block;
-  transition: .8s;
-}
-
-.login-block:hover .login-block-help{
+.login-block:hover .login-popup {
   display: block;
   transition: .8s;
 }
 
 .user-block {
   display: flex;
-  flex-direction: row;
 }
 
-.baners-primary{
+.baners-primary {
   display: flex;
-  flex-direction: row;
 }
 
-.catalog-popular{
+.catalog-popular {
   display: flex;
-  flex-direction: row;
 }
 
-.features-list{
+.features-list {
   display: flex;
-  flex-direction: row;
 }
 
 .baners-secondary {
   display: flex;
-  flex-direction: row;
 }
 
-.main-footer{
+.main-footer {
   display: flex;
-  flex-direction: row;
 }
 
 .index-feedback-popup {
   display: none;
 }
 
-.breadcrumbs-list{
+.breadcrumbs-list {
   display: flex;
-  flex-direction: row;
 }
 
 .catalog {
   display: flex;
-  flex-direction: row;
 }
