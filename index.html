@@ -7,7 +7,14 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
+
+  <input class="slider-inputs-item" type="radio" id="slide_btn_1" name="toggle" checked>
+  <input class="slider-inputs-item" type="radio" id="slide_btn_2" name="toggle">
+  <input class="slider-inputs-item" type="radio" id="slide_btn_3" name="toggle">
+
+<div class="site-wrapper">
+  <div class="content-wrapper">
+<!-- <div class="container"> -->
     <header class="main-header">
         <h1 class="visually-hidden">Главная страница магазина мороженого Глейси</h1>
         <div class="logo">
@@ -79,27 +86,22 @@
     <main>
         <section class="slider">
             <h2 class="slider-header visually-hidden">Специальное предложение магазина мороженого Глейси</h2>
-            <div class="slider-slide">
+            <div class="slider-slide slider-slide-one" id="slide1">
                 <p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
-                <a class="btn slider-slide-btn" href="#">Давайте оба!</a>
+                <a class="btn slide-btn" href="#">Давайте оба!</a>
             </div>
-            <div class="slider-slide">
-                <p class="slider-slide-title">Шоколадный пломбир и лимонный сорбет</p>
-                <a class="btn slider-slide-btn" href="#">Давайте оба!</a>
+            <div class="slider-slide slider-slide-two" id="slide2">
+                <p class="slide-title">Шоколадный пломбир и лимонный сорбет</p>
+                <a class="btn slide-btn" href="#">Давайте оба!</a>
             </div>
-            <div class="slider-slide">
-                <p class="slider-slide-title">Пломбир с помадкой и клубничный щербет</p>
-                <a class="btn slider-slide-btn" href="#">Давайте оба!</a>
+            <div class="slider-slide slider-slide-three" id="slide3">
+                <p class="slide-title">Пломбир с помадкой и клубничный щербет</p>
+                <a class="btn slide-btn" href="#">Давайте оба!</a>
             </div>
             <div class="slider-controls">
                 <label class="slider-controls-item" for="slide_btn_1"></label>
                 <label class="slider-controls-item" for="slide_btn_2"></label>
                 <label class="slider-controls-item" for="slide_btn_3"></label>
-            </div>
-            <div class="slider-inputs">
-                <input class="slider-inputs-item" type="radio" id="slide_btn_1" name="toggle" checked>
-                <input class="slider-inputs-item" type="radio" id="slide_btn_2" name="toggle">
-                <input class="slider-inputs-item" type="radio" id="slide_btn_3" name="toggle">
             </div>
         </section>
         <section class="baners-primary">
@@ -213,6 +215,7 @@
                 </form>
             </div>
         </section>
+      </div>
         <section class="map">
             <h2 class="map-header visually-hidden">Карта месторасположения магазина мороженого Глейси</h2>
             <img class="map-img" src="img/map-bg.jpg" width="1200" height="640" alt="Адрес месторасположения магазина мороженого Глейси : ул. Большая Конюшенная 19/8, Санкт-Петербург">
@@ -232,6 +235,7 @@
             </div>
         </section>
     </main>
+    <div class="content-wrapper">
     <footer class="main-footer index-footer">
         <section class="main-footer-socials">
             <h3 class="main-foter-socials-header visually-hidden">Ссылки на акаунты в социальных сетях магазина
@@ -281,6 +285,7 @@
             <button class="btn index-feedback-popup-form-btn" type="submit">Отправить</button>
         </form>
     </div>
+</div>
 </div>
 </body>
 </html>
