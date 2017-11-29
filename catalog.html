@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси - каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -18,20 +19,20 @@
                     <a class="main-nav-link current">Каталог</a>
                     <ul class="main-nav-submenu">
                         <li class="main-nav-submenu-item">
-                            <span class="main-nav-submenu-item-text">Новинки</span>
-                        </li>
+                          <span class="main-nav-submenu-item-text">Новинки</span>
+                      </li>
                         <li class="main-nav-submenu-item">
-                            <a class="main-nav-submenu-link" href="#">Сливочное</a>
-                        </li>
+                          <a class="main-nav-submenu-link" href="#">Сливочное</a>
+                      </li>
                         <li class="main-nav-submenu-item">
-                            <a class="main-nav-submenu-link active" href="#">Щербеты</a>
-                        </li>
+                          <a class="main-nav-submenu-link" href="#">Щербеты</a>
+                      </li>
                         <li class="main-nav-submenu-item">
-                            <a class="main-nav-submenu-link" href="#">Фруктовый лед</a>
-                        </li>
+                          <a class="main-nav-submenu-link" href="#">Фруктовый лед</a>
+                      </li>
                         <li class="main-nav-submenu-item">
-                            <a class="main-nav-submenu-link" href="#">Мелорин</a>
-                        </li>
+                          <a class="main-nav-submenu-link" href="#">Мелорин</a>
+                      </li>
                     </ul>
                 </li>
                 <li class="main-nav-item">
@@ -46,16 +47,22 @@
             <div class="search-block">
                 <a class="search-block-link" href="#">Поиск</a>
                 <form class="search-block-form" action="#" method="post">
+                  <label class="search-block-form-field-text" aria-label="Что ищем?">
                     <input class="search-block-form-input" type="search" name="search" placeholder="Что ищем?">
+                  </label>
                 </form>
             </div>
             <div class="login-block">
               <a class="login-block-link" href="#">Вход</a>
               <div class="login-popup">
                 <form class="login-block-form" action="#" method="post">
-                  <input class="login-block-form-input" type="text" name="email" placeholder="Электронная почта"
+                  <label class="login-block-form-field-text" aria-label="Электронная почта">
+                    <input class="login-block-form-input" type="text" name="email" placeholder="Электронная почта"
                          required>
-                  <input class="login-block-form-input" type="password" name="password" placeholder="Пароль" required>
+                  </label>
+                  <label class="login-block-form-field-text" aria-label="Пароль">
+                    <input class="login-block-form-input" type="password" name="password" placeholder="Пароль" required>
+                  </label>
                   <button class="btn login-block-form-btn" type="submit">Войти</button>
                 </form>
                 <div class="login-block-help">
@@ -64,8 +71,8 @@
                 </div>
               </div>
             </div>
-            <div class="basket">
-                <a class="basket-link" href="#">
+            <div class="basket basket-full">
+                <a class="basket-link basket-full-link" href="#">
                     <span class="basket-link-text">2 товара</span>
                 </a>
                 <div class="basket-popup">
@@ -74,7 +81,7 @@
                             <td class="basket-popup-table-cell">
                                 <button class="basket-popup-table-cross-btn" type="button"></button>
                             </td>
-                            <td class="basket-popup-table-cell">Пломбир с апельсиновым джемом</td>
+                            <td class="basket-popup-table-cell ice1">Пломбир с апельсиновым джемом</td>
                             <td class="basket-popup-table-cell">
                                 <span class="basket-popup-table-cell-qty">1,5 кг х</span>
                                 <span class="basket-popup-table-cell-price">200 руб.</span>
@@ -85,7 +92,7 @@
                             <td class="basket-popup-table-cell">
                                 <button class="basket-popup-table-cross-btn" type="button"></button>
                             </td>
-                            <td class="basket-popup-table-cell">Клубничный пломбир с присыпкой из белого шоколада</td>
+                            <td class="basket-popup-table-cell ice2">Клубничный пломбир с присыпкой из белого шоколада</td>
                             <td class="basket-popup-table-cell">
                                 <span class="basket-popup-table-cell-qty">1,5 кг х</span>
                                 <span class="basket-popup-table-cell-price">300 руб.</span>
@@ -370,14 +377,15 @@
             <a class="pagination-next" href="#">Вперед</a>
         </div>
     </main>
+    <div class="container">
     <footer class="main-footer catalog-footer">
         <section class="main-footer-socials">
             <h3 class="main-foter-socials-header visually-hidden">Ссылки на акаунты в социальных сетях магазина
                 мороженого Глейси</h3>
-            <a class="main-footer-socials-btn social_btn_tw" href="#">Твиттер</a>
-            <a class="main-footer-socials-btn social_btn_inst" href="#">Инстаграм</a>
-            <a class="main-footer-socials-btn social_btn_fb" href="#">Фейсбук</a>
-            <a class="main-footer-socials-btn social_btn_vk" href="#">Вконтакте</a>
+                <a class="main-footer-socials-btn social_btn_tw" href="#" aria-label="Твиттер"></a>
+                <a class="main-footer-socials-btn social_btn_inst" href="#" aria-label="Инстаграм"></a>
+                <a class="main-footer-socials-btn social_btn_fb" href="#" aria-label="Фейсбук"></a>
+                <a class="main-footer-socials-btn social_btn_vk" href="#" aria-label="Вконтакте"></a>
         </section>
         <nav class="main-footer-navigation">
             <ul class="main-footer-navigation-list">
@@ -406,6 +414,7 @@
             </p>
         </section>
     </footer>
+  </div>
 </div>
 </body>
 </html>

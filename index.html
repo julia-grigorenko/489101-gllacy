@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -13,8 +14,7 @@
   <input class="slider-inputs-item" type="radio" id="slide_btn_3" name="toggle">
 
 <div class="site-wrapper">
-  <div class="content-wrapper">
-<!-- <div class="container"> -->
+  <div class="container">
     <header class="main-header">
         <h1 class="visually-hidden">Главная страница магазина мороженого Глейси</h1>
         <div class="logo">
@@ -23,7 +23,9 @@
         <nav class="main-nav">
             <ul class="main-nav-list">
                 <li class="main-nav-item">
-                    <a class="main-nav-link" href="catalog.html">Каталог</a>
+                    <a class="main-nav-link" href="catalog.html">
+                      <span class="main-nav-link-text">Каталог</span>
+                      </a>
                     <ul class="main-nav-submenu">
                         <li class="main-nav-submenu-item">
                             <span class="main-nav-submenu-item-text">Новинки</span>
@@ -43,10 +45,14 @@
                     </ul>
                 </li>
                 <li class="main-nav-item">
-                    <a class="main-nav-link" href="#">Доставка и оплата</a>
+                    <a class="main-nav-link" href="#">
+                      <span class="main-nav-link-text">Доставка и оплата</span>
+                    </a>
                 </li>
                 <li class="main-nav-item">
-                    <a class="main-nav-link" href="#">О Компании</a>
+                    <a class="main-nav-link" href="#">
+                      <span class="main-nav-link-text">О Компании</span>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -54,16 +60,22 @@
             <div class="search-block">
                 <a class="search-block-link" href="#">Поиск</a>
                 <form class="search-block-form" action="#" method="post">
+                  <label class="search-block-form-field-text" aria-label="Что ищем?">
                     <input class="search-block-form-input" type="search" name="search" placeholder="Что ищем?">
+                  </label>
                 </form>
             </div>
             <div class="login-block">
               <a class="login-block-link" href="#">Вход</a>
               <div class="login-popup">
                 <form class="login-block-form" action="#" method="post">
-                  <input class="login-block-form-input" type="text" name="email" placeholder="Электронная почта"
+                  <label class="login-block-form-field-text" aria-label="Электронная почта">
+                    <input class="login-block-form-input" type="text" name="email" placeholder="Электронная почта"
                          required>
-                  <input class="login-block-form-input" type="password" name="password" placeholder="Пароль" required>
+                  </label>
+                  <label class="login-block-form-field-text" aria-label="Пароль">
+                    <input class="login-block-form-input" type="password" name="password" placeholder="Пароль" required>
+                  </label>
                   <button class="btn login-block-form-btn" type="submit">Войти</button>
                 </form>
                 <div class="login-block-help">
@@ -235,15 +247,15 @@
             </div>
         </section>
     </main>
-    <div class="content-wrapper">
+    <div class="container">
     <footer class="main-footer index-footer">
         <section class="main-footer-socials">
             <h3 class="main-foter-socials-header visually-hidden">Ссылки на акаунты в социальных сетях магазина
                 мороженого Глейси</h3>
-            <a class="main-footer-socials-btn social_btn_tw" href="#">Твиттер</a>
-            <a class="main-footer-socials-btn social_btn_inst" href="#">Инстаграм</a>
-            <a class="main-footer-socials-btn social_btn_fb" href="#">Фейсбук</a>
-            <a class="main-footer-socials-btn social_btn_vk" href="#">Вконтакте</a>
+            <a class="main-footer-socials-btn social_btn_tw" href="#" aria-label="Твиттер"></a>
+            <a class="main-footer-socials-btn social_btn_inst" href="#" aria-label="Инстаграм"></a>
+            <a class="main-footer-socials-btn social_btn_fb" href="#" aria-label="Фейсбук"></a>
+            <a class="main-footer-socials-btn social_btn_vk" href="#" aria-label="Вконтакте"></a>
         </section>
         <nav class="main-footer-navigation">
             <ul class="main-footer-navigation-list">
@@ -277,11 +289,17 @@
         <p class="index-feedback-popup-title">Мы обязательно вам ответим!</p>
         <form class="index-feedback-popup-form" action="#" method="post">
             <button class="index-feedback-popup-form-close" type="button"></button>
-            <input class="index-feedback-popup-form-input" type="text" name="feedback-name"
+            <label class="index-feedback-popup-form-field-text" aria-label="Как вас зовут?">
+              <input class="index-feedback-popup-form-input" type="text" name="feedback-name"
                    placeholder="Как вас зовут?">
-            <input class="index-feedback-popup-form-input" type="email" name="feedback-email"
+            </label>
+            <label class="index-feedback-popup-form-field-text" aria-label="Ваша почта для ответа?">
+              <input class="index-feedback-popup-form-input" type="email" name="feedback-email"
                    placeholder="Ваша почта для ответа?">
-            <textarea class="index-feedback-popup-form-text">Напишите что-нибудь</textarea>
+            </label>
+            <label class="index-feedback-popup-form-field-text">
+              <textarea class="index-feedback-popup-form-text">Напишите что-нибудь</textarea>
+            </label>
             <button class="btn index-feedback-popup-form-btn" type="submit">Отправить</button>
         </form>
     </div>
