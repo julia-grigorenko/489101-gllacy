@@ -179,7 +179,7 @@ body > input[type="radio"] {
 
 .main-nav {
   min-width: 351px;
-  font-family: "Roboto", "Arial", sans-serif;
+  /*font-family: "Roboto", "Arial", sans-serif;*/
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
@@ -189,8 +189,18 @@ body > input[type="radio"] {
 }
 
 .main-nav-item {
-  margin-right: 14px;
+  /*margin-right: 14px;*/
   position: relative;
+}
+
+.main-nav-link.current {
+  padding: 8px 14px;
+  border-radius: 30px;
+  background: #d07058;
+}
+
+.main-nav-link.current > .main-nav-link-text:after {
+  display: none;
 }
 
 .main-nav-submenu {
@@ -255,8 +265,10 @@ body > input[type="radio"] {
   position: relative;
   width: 270px;
   justify-content: flex-end;
-  margin-left: 290px;
-  padding-top: 16px;
+  /*margin-left: 290px;*/
+  margin-left: 333px;
+  /*padding-top: 16px;*/
+  padding-top: 12px;
 }
 
 .baners-primary {
@@ -286,10 +298,10 @@ body > input[type="radio"] {
 
 .main-nav-link {
   position: relative;
-  font-family: "Roboto", "Arial", sans-serif;
+  /*font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 18px;*/
   color: #ffffff;
   padding-top: 7px;
   padding-left: 14px;
@@ -313,16 +325,19 @@ body > input[type="radio"] {
 .main-nav-link-text:after {
   content: "";
   position: absolute;
-  top: 25px;
+  /*top: 25px;*/
+  top: 18px;
   left: 0px;
   width: 100%;
-  border-top: 2px solid #ffffff;
+  /*border-top: 2px solid #ffffff;*/
+  border-top: 1px solid #ffffff;
   opacity: 0.2;
 }
 
 .search-block {
   position: relative;
-  margin-right: 10px;
+  /*margin-right: 10px;*/
+  margin-right: 7px;
 }
 
 .search-block-form {
@@ -404,7 +419,8 @@ body > input[type="radio"] {
 
 .login-block {
   position: relative;
-  margin-right: 10px;
+  /*margin-right: 10px;*/
+  margin-right: 7px;
 }
 
 .login-popup {
@@ -746,20 +762,21 @@ body > input[type="radio"] {
 }
 
 .contacts-schedule {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: medium;
+  /*font-weight: medium;*/
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
   margin: 0px;
   margin-bottom: 4px;
-  margin-top: 18px;
+  /*margin-top: 18px;*/
+  margin-top: 19px;
   text-align: right;
 }
 
 .contacts-phone {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: medium;
+  /*font-weight: medium;*/
+  font-weight: 500;
   font-size: 22px;
   line-height: 24px;
   color: #ffffff;
