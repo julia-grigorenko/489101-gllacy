@@ -8,11 +8,9 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
   <input class="slider-inputs-item" type="radio" id="slide_btn_1" name="toggle" checked>
   <input class="slider-inputs-item" type="radio" id="slide_btn_2" name="toggle">
   <input class="slider-inputs-item" type="radio" id="slide_btn_3" name="toggle">
-
 <div class="site-wrapper">
   <div class="container">
     <header class="main-header">
@@ -23,7 +21,7 @@
         <nav class="main-nav">
             <ul class="main-nav-list">
                 <li class="main-nav-item">
-                    <a class="main-nav-link" href="catalog.html">
+                    <a class="main-nav-link" href="#">
                       <span class="main-nav-link-text">Каталог</span>
                       </a>
                     <ul class="main-nav-submenu">
@@ -31,7 +29,7 @@
                             <span class="main-nav-submenu-item-text">Новинки</span>
                         </li>
                         <li class="main-nav-submenu-item">
-                            <a class="main-nav-submenu-link" href="#">Сливочное</a>
+                            <a class="main-nav-submenu-link" href="catalog.html">Сливочное</a>
                         </li>
                         <li class="main-nav-submenu-item">
                             <a class="main-nav-submenu-link active" href="#">Щербеты</a>
@@ -98,15 +96,15 @@
     <main>
         <section class="slider">
             <h2 class="slider-header visually-hidden">Специальное предложение магазина мороженого Глейси</h2>
-            <div class="slider-slide slider-slide-one" id="slide1">
+            <div class="slider-slide" id="slide1">
                 <p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
                 <a class="btn slide-btn" href="#">Давайте оба!</a>
             </div>
-            <div class="slider-slide slider-slide-two" id="slide2">
+            <div class="slider-slide" id="slide2">
                 <p class="slide-title">Шоколадный пломбир и лимонный сорбет</p>
                 <a class="btn slide-btn" href="#">Давайте оба!</a>
             </div>
-            <div class="slider-slide slider-slide-three" id="slide3">
+            <div class="slider-slide" id="slide3">
                 <p class="slide-title">Пломбир с помадкой и клубничный щербет</p>
                 <a class="btn slide-btn" href="#">Давайте оба!</a>
             </div>
@@ -278,10 +276,12 @@
           <section class="main-footer-copyright">
               <h3 class="main-footer-copyright-header visually-hidden">Информация об авторском праве для сайта магазина
                   мороженого Глейси</h3>
-              <img class="main-footer-copyright-img" src="img/html-logo.png" width="108" height="39" alt="Логотип обучающих курсов HTML Academy">
+              <a class="main-footer-copyright-logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
+                <img class="main-footer-copyright-logo-img" src="img/html-logo.png" width="108" height="39" alt="Логотип обучающих курсов HTML Academy">
+              </a>
               <p class="main-footer-copyright-text">
                   Сделано в
-                  <a class="main-footer-copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+                  <a class="main-footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
                   © 2017
               </p>
           </section>
@@ -289,7 +289,7 @@
       <div class="index-feedback-popup">
           <h2 class="index-feedback-popup-header visually-hidden">Форма обратной связи магазина мороженого Глейси</h2>
           <p class="index-feedback-popup-title">Мы обязательно вам ответим!</p>
-          <form class="index-feedback-popup-form" action="#" method="post">
+          <form class="index-feedback-popup-form" action="https://echo/htmlacademy.ru" method="post">
               <button class="index-feedback-popup-form-close" type="button"></button>
               <label class="index-feedback-popup-form-field-text" aria-label="Как вас зовут?">
                 <input class="index-feedback-popup-form-input" type="text" name="feedback-name"
